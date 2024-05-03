@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Personagens de Rick e Morty</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/module/Api.js" defer></script>
+    <script src="js/module/search.js" defer></script>
+    <script src="js/module/Pagina.js" defer></script>
+</head>
+    <body>
+        <!-- ÁREA DO MENU -->
+        <div id="caixa_menu">
+            <div id="menu" class="center">
+                <div class="item_menu"><a href="#header">Home</a></div>
+                <div class="item_menu"><a href="#api-container">Personagens</a></div>
+                <div class="pesquisa">
+                    <input type="text" id="searchInput" placeholder="Pesquisar personagens...">
+                    <button id="searchButton">Pesquisar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ÁREA DO CABEÇALHO -->
+        <div id="header" class="back_image"></div>
+        <div id="api-container" class="center">
+            <div class="conteudo" id="cardProdutos" aria-live="polite">
+            <!-- Personagens carregados dinamicamente aqui -->
+            </div>
+        </div>
+
+        <!-- ÁREA DE PÁGINAS -->
+        <div id="pagination" class="pagination">
+            <button id="prevPage">Anterior</button>
+            <span id="currentPage">1</span>
+            <button id="nextPage">Próximo</button>
+        </div>
+        <!-- RODAPÉ -->
+        <div id="footer">
+        <div id="caixa_footer" class="center">
+            Victor e Guilherme
+        </div>
+        </div>
+    </body>
+</html>
